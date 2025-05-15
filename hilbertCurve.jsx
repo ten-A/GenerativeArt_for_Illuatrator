@@ -18,6 +18,7 @@ for (var i = 0; i < points.length; i++)
   pt.anchor = points[i];
   pt.leftDirection = pt.anchor;
   pt.rightDirection = pt.anchor;
+  if (pth.pathPoints.length>16000) pth = layer.pathItems.add();
 }
 
 function drawHilbert(d, x, y, size, xi, xj, yi, yj) 
